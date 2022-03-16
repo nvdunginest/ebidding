@@ -39,8 +39,6 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.15",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.15",
-          "Microsoft.Extensions.Logging": "3.1.15",
-          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "3.1.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
@@ -302,7 +300,7 @@
           "System.Xml.XmlDocument.Reference": "4.1.2.0",
           "System.Xml.XmlSerializer.Reference": "4.1.2.0",
           "System.Xml.XPath.Reference": "4.1.2.0",
-          "System.Xml.XPath.XDocument.Reference": "4.1.2.0",
+          "System.Xml.XPath.XDocument": "4.1.2.0",
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
@@ -336,20 +334,6 @@
         },
         "compile": {
           "lib/netstandard2.1/EPPlus.dll": {}
-        }
-      },
-      "log4net/2.0.11": {
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/log4net.dll": {
-            "assemblyVersion": "2.0.11.0",
-            "fileVersion": "2.0.11.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/log4net.dll": {}
         }
       },
       "MailKit/2.6.0": {
@@ -1288,25 +1272,6 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Console.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Logging.Log4Net.AspNetCore/3.1.5": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "3.1.15",
-          "Microsoft.Extensions.Configuration.Abstractions": "3.1.15",
-          "Microsoft.Extensions.Configuration.Binder": "3.1.15",
-          "Microsoft.Extensions.Logging": "3.1.15",
-          "System.Xml.XPath.XDocument": "4.3.0",
-          "log4net": "2.0.11"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {
-            "assemblyVersion": "3.1.5.0",
-            "fileVersion": "3.1.5.0"
-          }
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {}
         }
       },
       "Microsoft.Extensions.ObjectPool/2.2.0": {},
@@ -2261,9 +2226,6 @@
             "assemblyVersion": "4.0.1.0",
             "fileVersion": "4.6.26515.6"
           }
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Console/4.3.0": {
@@ -3115,19 +3077,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
-        }
-      },
-      "System.Xml.XPath.XDocument/4.3.0": {
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
-          "System.Xml.XPath": "4.3.0"
         }
       },
       "System.Xml.XPath.XmlDocument/4.3.0": {
@@ -4813,7 +4762,7 @@
         },
         "compileOnly": true
       },
-      "System.Xml.XPath.XDocument.Reference/4.1.2.0": {
+      "System.Xml.XPath.XDocument/4.1.2.0": {
         "compile": {
           "System.Xml.XPath.XDocument.dll": {}
         },
@@ -4839,13 +4788,6 @@
       "sha512": "sha512-JpkTI30hZnNcXis/EEbVE0dflVQD8MXrEMEt2HGZsmdIKnMw1ezqeHlbCIpvyWGNjFLizpZKd3nMoFuJWtrNIw==",
       "path": "epplus/5.6.4",
       "hashPath": "epplus.5.6.4.nupkg.sha512"
-    },
-    "log4net/2.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4MEfp6dSN/Cl4XHRqBo8eOkhlH9AOt/ydmPRaj/FHuKHTNoPuKjbaT97aACmePpkW5QHQ+YudhYYvVStabOZmQ==",
-      "path": "log4net/2.0.11",
-      "hashPath": "log4net.2.0.11.nupkg.sha512"
     },
     "MailKit/2.6.0": {
       "type": "package",
@@ -5343,13 +5285,6 @@
       "sha512": "sha512-tEMW5RguaCmwHZYBpnYRuc1t8mgOGTpxNfwTMOokUWCgykkjNjV5Ka14AkLkPBk0I64rbClXicUReGtM8DuyoQ==",
       "path": "microsoft.extensions.logging.console/3.1.15",
       "hashPath": "microsoft.extensions.logging.console.3.1.15.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Log4Net.AspNetCore/3.1.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5yxcabqlqTc2TrV6rFqfyvHQ+qqlkWLJbxFRnlfQ8H7pcuM2oxsfnjZQ3GpW6PHJnATOVYAnxGtrOQpUC56c0g==",
-      "path": "microsoft.extensions.logging.log4net.aspnetcore/3.1.5",
-      "hashPath": "microsoft.extensions.logging.log4net.aspnetcore.3.1.5.nupkg.sha512"
     },
     "Microsoft.Extensions.ObjectPool/2.2.0": {
       "type": "package",
@@ -6477,13 +6412,6 @@
       "sha512": "sha512-v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
       "path": "system.xml.xpath/4.3.0",
       "hashPath": "system.xml.xpath.4.3.0.nupkg.sha512"
-    },
-    "System.Xml.XPath.XDocument/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
-      "path": "system.xml.xpath.xdocument/4.3.0",
-      "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "System.Xml.XPath.XmlDocument/4.3.0": {
       "type": "package",
@@ -7814,7 +7742,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Xml.XPath.XDocument.Reference/4.1.2.0": {
+    "System.Xml.XPath.XDocument/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
